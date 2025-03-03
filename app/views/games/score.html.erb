@@ -1,7 +1,7 @@
-<div class="container text-center mt-5">
-  <h1> Game Result</h1>
-  <p><strong>Your Word:</strong> <%= @word %></p>
-  <h2><%= @message %></h2>
-
-  <%= link_to "Play Again", new_path, class: "btn btn-primary mt-3" %>
+<div class="container mt-5">
+  <h2>Game Result</h2>
+  <p>Your Word: <strong><%= @word %></strong></p>
+  <p><%= @message %></p>
+  <p><strong>Total Score:</strong> <%= @total_score %></p>
+  <a href="<%= new_path %>" class="btn btn-primary">Play Again</a>
 </div>

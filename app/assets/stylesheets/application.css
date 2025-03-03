@@ -11,8 +11,15 @@
  body {
   font-family: Arial, sans-serif;
   background-color: #f8f9fa;
+  text-align: center;
 }
 .container {
   max-width: 600px;
   margin: auto;
+  margin-top: 50px;
+}
+
+
+h1 {
+  color: #007bff;
 }
