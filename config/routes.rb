@@ -11,7 +11,8 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
-  get "new", to: "games#new"    # Displays a new game with random letters
-  post "score", to: "games#score"  # Processes the submitted word
+  root to: 'games#new' # Root path loads a new game
+  get '/new', to: 'games#new', as: :new
+  post '/score', to: 'games#score', as: :score
 
 end
